@@ -40,3 +40,7 @@ input[type='submit']{
 .display{
     text-align: center;
 }
+
+img{
+    margin-left: 500px;
+}

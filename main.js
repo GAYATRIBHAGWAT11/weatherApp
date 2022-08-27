@@ -12,7 +12,7 @@ let temperature=document.getElementById('temp')
 
 btn.addEventListener('click',function(){
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=50a7aa80fa492fa92e874d23ad061374`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value} &appid=d9b78a321a618288e65ab6ad3513bf4d`)
 .then(response=>response.json())
 .then(data=>{
     let nameValue=data['name'];
@@ -29,3 +29,4 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=50
 .catch(err=>alert('wrong city name!'))
 })
 
+// &appid=d9b78a321a618288e65ab6ad3513bf4d
