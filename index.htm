@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Weather APP</title>
 </head>
 <body>   
     <img src="/weather02-512.webp" alt="" id="image"> 
@@ -19,6 +19,7 @@
         <h1 id="name"></h1>
         <p id="desc"></p>
         <p id="temp"></p>
+        <p id="humidity"></p>
 
     </div>
 
@@ -63,7 +64,7 @@
     btn1.addEventListener('click',function(name){
 
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=d9b78a321a618288e65ab6ad3513bf4d`)//fetching api data
-        .then(response=>response.json())//text --> json
+        .then(response=>response.json())//text -->
           <!-- .then(data=>{
             let result= `<div><h1>city : ${data.name}</h1> 
                 <h1>temp = ${Math.floor(data["main"].temp-273)} °C</h1>
@@ -75,7 +76,6 @@
         }).catch(err=>alert("invalid city name"))
 
     }) -->
-</script>
-</html>  -->
+
 
 

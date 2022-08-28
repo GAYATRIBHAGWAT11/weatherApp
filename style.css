@@ -44,3 +44,8 @@ input[type='submit']{
 img{
     margin-left: 500px;
 }
+.display{
+    margin-top: 50px;
+   font-weight: 700;
+   font-size: 30px;
+}
